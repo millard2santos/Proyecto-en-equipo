@@ -1,1 +1,0 @@
-Carpeta donde se guardaran todas las imagenes, iconos y archivos externos al programa
