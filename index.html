@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1>Token</h1>
-    <form action="">
-        <input type="text" name="name" id="name" placeholder="Name">
-        <input type="submit">
-    </form>
-    <script src="main.js"></script>
+    <h1>Repaso</h1>
+    <h2>En el DOM se usa todo, metodos de array, funciones, etc. Todo se tendra que resolver usando el DOM</h2>
+
+    <p>--- Todos los ejercicios se tienen que resolver con metodos de arrays. No se puede utilizar un ciclo for normal
+    <p>--- Todos se tienen que resolver usando funciones.</p>
+
+    <h3>Datos: Curiosos</h3>
+    <p>Si siguen los ejercicios bien, veran el poder de las funciones!!</p>
+    <p>A medida que avancen, es normal que los ejercicios anteriores no funcionen, pero es por que constantemente cambiaremos la funcion principal. Lo unico que importa es que el ultimo ejercicio se pinte bien!!!</p>
+    <ol>
+        <li>Crea una funcion llamada 'printInDOM' que no reciba parametros y que pinte en el div debajo tu nombre</li>
+        <div id="container1"></div>
+        <li>Copia los siguientes arrays en tu js: <br><br> const colors =
+            ['green','blue','red','white','black','orange','yellow'] <br> const people =
+            ['Deiner','Cecilia','Martin','Davi','Miguel','Julissa','Millard'] <br>
+            <br>
+            Si Hiciste bien la funcion anterior significa que puedes reutilizarla!!! <br>
+            En este ejercicio tienes que utilizar dos metodos de Array : 'Find'  e  'IndexOf' <br>
+            Usando los metodos de array 'busca' en el array 'people' un elemento que contenga la letra 'J'
+            Cuando tengas ese elemento, reutiliza la funcion del ejercicio 1 y pasale como parametro el nombre encontrado para pintarlo en el div debajo <br>
+            Luego de eso, usando metodos de array, encuantra su indice, y dale un color del array de colors correspondiente con su indice.
+        </li>
+        <div id="container2"></div>
+        <li>Vamos a crear otra funcion, la llamaremos 'Birth' <br>
+        Esta funcion recibira un parametro 'age' y regresara el año 2022 restandole 'age' para asi darnos el año de nacimiento de la persona 
+        . Has un log de la funcion para ver si lo has hecho correctamente. Luego de eso, usa el metodo 'toString()' para que el numero sea tipo string y hacer un slice que solo me de los ultimos 2 digitos del año
+        </li>
+        <li>Volvemos a utilizar la funcion 'printInDOM' ahora pasale 2 parametros (name,age) <br>
+        Copia este nuevo array en tu js : const ages = [30,25,49,15,36,24,50]<br>
+        Consigue filtrar del array 'people' Todos los nombres que empiecen por 'M' y consigue sus indices <br>Luego usando un forEach, utiliza la funcion 'printInDOM' para pintar en el div debajo, nombre y edad, La edad es la correspondiente con su indice en el array 'ages'
+        </li>
+        <div id="container4"></div>
+        <li>Ahora usemos una funcion dentro de otra!! <br>
+        Si has hecho los ejercicio bien, te daras cuenta que sin tu quererlo, tambien se ha puesto de color!! <br>
+        Esto es porque antes hemos ya programado la funcion para hacerlo, asi que no tenemos que volver a escribirlo!!! <br>
+        Solo has tenido que pintar en el DOM una sola vez  en la funcion y la has reutilizado <br>
+        Te suena este mecanismo?? ..... Eso es, asi funciona REACT!! <br>
+        Ahora tenemos la edad de la persona, pero no la quiero asi, quiero ver en que año nacio y ademas solo los 2 ultimos digitos ejemplo: Millard, 26 ---> Millard, 97 <br>
+        Pinta en el div debajo usando la funcion 'printInDOM' el nombre y el año de nacimiento usando la funcion 'Birth' para restar la edad que pasamos como parametro y devolver los ultimos 2 digitos de el año de nacimiento
+        </li>
+        <div id="container5"></div>
+        <li>Y asi hemos visto el poder de las funciones!! guardamos codigo dentro de una funcion para no tener que escribir codigo redundante!!</li>
+    </ol>
+    </p>
 </body>
+
 </html>
